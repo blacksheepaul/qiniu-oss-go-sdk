@@ -1,4 +1,4 @@
-module github.com/blacksheepaul/qiniu-oss-go-sdk
+module github.com/blacksheepaul/qiniu-oss-go-sdk/v1
 
 go 1.17
 
