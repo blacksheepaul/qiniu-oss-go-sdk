@@ -3,7 +3,8 @@ package upload
 import (
 	"context"
 	"io"
-	"qiniu-oss-go-sdk/config"
+
+	"github.com/blacksheepaul/qiniu-oss-go-sdk/config"
 
 	"github.com/qiniu/go-sdk/v7/auth"
 	"github.com/qiniu/go-sdk/v7/storagev2/credentials"
