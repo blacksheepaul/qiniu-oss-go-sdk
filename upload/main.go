@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/blacksheepaul/qiniu-oss-go-sdk/v1/config"
+	"github.com/blacksheepaul/qiniu-oss-go-sdk/config"
 
 	"github.com/qiniu/go-sdk/v7/auth"
 	"github.com/qiniu/go-sdk/v7/storagev2/credentials"
