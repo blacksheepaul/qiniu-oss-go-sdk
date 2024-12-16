@@ -1,7 +1,7 @@
 package download
 
 import (
-	"github.com/blacksheepaul/qiniu-oss-go-sdk/v1/config"
+	"github.com/blacksheepaul/qiniu-oss-go-sdk/config"
 
 	"github.com/qiniu/go-sdk/v7/storage"
 	"github.com/qiniu/go-sdk/v7/storagev2/credentials"
