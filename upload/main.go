@@ -56,6 +56,7 @@ func (u *Uploader) StreamUpload(key string, reader io.Reader) error {
 	err := uploadManager.UploadReader(context.Background(), reader, &uploader.ObjectOptions{
 		BucketName: u.Bucket,
 		ObjectName: &key,
+		FileName:   key,
 	}, nil)
 	return err
 }
