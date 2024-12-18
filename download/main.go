@@ -1,6 +1,8 @@
 package download
 
 import (
+	"time"
+
 	"github.com/blacksheepaul/qiniu-oss-go-sdk/config"
 
 	"github.com/qiniu/go-sdk/v7/storage"
@@ -24,5 +26,6 @@ func NewDownloader(cfg config.DownloadConfig) *Downloader {
 }
 
 func (d *Downloader) GetPrivateAccessURL(key string) (url string) {
-	return storage.MakePrivateURLv2(d.credentials, d.Domain, key, d.Deadline)
+	ddl := d.Deadline + time.Now().Unix()
+	return storage.MakePrivateURLv2(d.credentials, d.Domain, key, ddl)
 }
